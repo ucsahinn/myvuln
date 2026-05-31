@@ -1,102 +1,180 @@
 <div align="center">
 
-# MyVulna
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;height=185&amp;color=0:020617,45:0f766e,100:f59e0b&amp;section=header&amp;text=MyVulna&amp;fontColor=fff7ed&amp;fontSize=58&amp;fontAlignY=34&amp;desc=Threat%20intelligence%20workspace%20for%20security%20teams&amp;descAlignY=58&amp;descSize=17" alt="MyVulna public repository banner" />
 
-### Multi-tenant threat intelligence platform for analysts and security teams
+### CVE intelligence · URL analysis · Intel Feed · API v1 · Alerting · Reports
 
-[![Public safe](https://img.shields.io/badge/public%20surface-docs%20only-0f766e?style=for-the-badge)](#public-repository-boundary)
-[![Source private](https://img.shields.io/badge/source-private-111827?style=for-the-badge)](#public-repository-boundary)
-[![Security policy](https://img.shields.io/badge/security-policy-f59e0b?style=for-the-badge)](SECURITY.md)
-[![Support](https://img.shields.io/badge/support-guided-2563eb?style=for-the-badge)](SUPPORT.md)
+[![Live product](https://img.shields.io/badge/live-myvuln.io-0f766e?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://myvuln.io/)
+[![Public boundary](https://img.shields.io/badge/public%20repo-docs%20only-111827?style=for-the-badge&logo=github&logoColor=white)](#public-repository-boundary--public-repo-siniri)
+[![Private source](https://img.shields.io/badge/source-private-f59e0b?style=for-the-badge&logo=github&logoColor=111827)](#public-repository-boundary--public-repo-siniri)
+[![Security policy](https://img.shields.io/badge/security-policy-ef4444?style=for-the-badge&logo=securityscorecard&logoColor=white)](SECURITY.md)
+[![Support](https://img.shields.io/badge/support-guided-2563eb?style=for-the-badge&logo=gitbook&logoColor=white)](SUPPORT.md)
+
+<br />
+
+[![Next.js](https://img.shields.io/badge/Next.js%2016-020617?style=flat-square&logo=nextdotjs&logoColor=white)](#technical-posture--teknik-konum)
+[![React](https://img.shields.io/badge/React%2019-020617?style=flat-square&logo=react&logoColor=61dafb)](#technical-posture--teknik-konum)
+[![Supabase](https://img.shields.io/badge/Supabase-private%20backend-020617?style=flat-square&logo=supabase&logoColor=3ecf8e)](#public-repository-boundary--public-repo-siniri)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-020617?style=flat-square&logo=typescript&logoColor=60a5fa)](#technical-posture--teknik-konum)
 
 </div>
 
 ---
 
-## Overview
+## Türkçe
 
-MyVulna is a private-source threat intelligence platform built for vulnerability tracking, CVE monitoring, URL intelligence, analyst workflows, and integration-ready security operations.
+MyVulna; güvenlik ekipleri, analistler ve operasyon tarafı için tasarlanmış çok kiracılı bir tehdit istihbaratı platformudur. CVE takibi, URL istihbaratı, Intel Feed, API entegrasyonları, uyarı akışları ve raporlama süreçlerini tek bir çalışma yüzeyinde toplar.
 
-This repository is the public-safe home for MyVulna. It exists to explain the product, route support requests, publish non-sensitive updates, and provide a responsible security reporting path without exposing source code, infrastructure details, secrets, internal security records, or production data.
+Canlı ürün: [https://myvuln.io/](https://myvuln.io/)
 
-## Product areas
+Bu repo kaynak kod deposu değildir. MyVulna'nın public vitrin, destek, güvenlik politikası ve yayın notları yüzeyidir. Private kaynak kod, Supabase migration'ları, operasyon SQL'leri, iç güvenlik kayıtları, müşteri/tenant verileri ve secret içeren hiçbir dosya burada tutulmaz.
+
+## English
+
+MyVulna is a multi-tenant threat intelligence platform for security teams, analysts, and operational workflows. It brings CVE tracking, URL intelligence, Intel Feed review, API integrations, alerting, exports, and reporting into a single product surface.
+
+Live product: [https://myvuln.io/](https://myvuln.io/)
+
+This is not the source-code repository. This public repository is the safe product hub for MyVulna: overview, support, security policy, and public release notes. Source code, Supabase migrations, operational SQL, internal security records, customer/tenant data, and secrets stay private.
+
+---
+
+## Product snapshot · Ürün özeti
 
 <table>
   <tr>
     <td width="50%">
       <h3>Threat intelligence workspace</h3>
-      <p>CVE and URL intelligence workflows designed for analyst review, triage, tracking, and reporting.</p>
+      <p>CVE, URL, and signal review workflows for analyst triage and investigation tracking.</p>
+      <p><strong>TR:</strong> CVE, URL ve sinyal inceleme süreçleri için analist odaklı çalışma alanı.</p>
     </td>
     <td width="50%">
       <h3>Intel Feed</h3>
-      <p>Operational feed views for current signals, enrichment, deduplication, and investigation handoff.</p>
+      <p>Operational feed surface for signal review, enrichment, deduplication, and handoff.</p>
+      <p><strong>TR:</strong> Sinyal inceleme, zenginleştirme, tekrar azaltma ve aksiyon aktarımı için operasyonel feed.</p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h3>Integration surface</h3>
-      <p>API-key protected public API v1 boundary for approved integrations and automation workflows.</p>
+      <h3>API v1 boundary</h3>
+      <p>API-key protected integration surface for approved security automation and reporting flows.</p>
+      <p><strong>TR:</strong> Onaylı otomasyon ve raporlama akışları için API-key korumalı entegrasyon yüzeyi.</p>
     </td>
     <td width="50%">
-      <h3>Alerting and reporting</h3>
-      <p>SMTP, webhook, in-app alerting, exports, and report generation for security operations teams.</p>
+      <h3>Alerts and reports</h3>
+      <p>SMTP, webhook, in-app alerts, exports, and report generation for security operations.</p>
+      <p><strong>TR:</strong> SMTP, webhook, uygulama içi uyarı, export ve rapor üretimi.</p>
     </td>
   </tr>
 </table>
 
-## Public repository boundary
+## Operating model · Çalışma modeli
 
-This public repository is intentionally limited.
+| Area | English | Türkçe |
+| --- | --- | --- |
+| Intelligence | CVE and URL intelligence workflows for analyst teams. | Analist ekipleri için CVE ve URL istihbaratı akışları. |
+| Triage | Review queues, status tracking, enrichment, and reporting handoff. | İnceleme kuyrukları, durum takibi, zenginleştirme ve raporlama aktarımı. |
+| Integrations | API v1, alerting, webhook, SMTP, and export workflows. | API v1, uyarı, webhook, SMTP ve export iş akışları. |
+| Governance | Private source, public-safe docs, coordinated vulnerability reporting. | Private kaynak, public-safe dokümantasyon, koordineli zafiyet bildirimi. |
 
-| Included here | Kept private |
+## Technical posture · Teknik konum
+
+<table>
+  <tr>
+    <td width="33%">
+      <h3>Frontend</h3>
+      <p>Next.js 16, React 19, TypeScript, dashboard-first interface design.</p>
+    </td>
+    <td width="33%">
+      <h3>Backend</h3>
+      <p>Supabase-backed private implementation with server-side boundaries.</p>
+    </td>
+    <td width="33%">
+      <h3>Security</h3>
+      <p>Tenant-aware design, API-key integration boundary, private disclosure path.</p>
+    </td>
+  </tr>
+</table>
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,supabase,postgres,nodejs" alt="MyVulna core technology icons" />
+</p>
+
+## Public repository boundary · Public repo sınırı
+
+| Published here | Private by design |
 | --- | --- |
-| Product overview | Application source code |
-| Public support policy | Environment files and credentials |
-| Security disclosure policy | Supabase schema, migrations, and SQL operations |
-| Non-sensitive release notes | Internal threat models and hardening records |
-| Safe issue templates | Production logs, screenshots, tenants, customer data |
+| Product overview and public positioning | Application source code |
+| TR/EN public documentation | Environment files and credentials |
+| Security disclosure policy | Supabase schema, migrations, and operational SQL |
+| Support and issue templates | Internal threat models and hardening records |
+| Non-sensitive release notes | Production logs, screenshots, tenant data, customer data |
 | Public-safety validation script | API keys, signing keys, tokens, cookies |
 
-The private MyVulna development repository remains private. Do not open pull requests that add source code, operational SQL, infrastructure configuration, internal audit records, screenshots containing tenant data, or any secret-like value.
+The private MyVulna development repository remains private. Public issues and pull requests must not contain source code, schema details, exploit steps, secrets, tenant/customer data, or production evidence.
 
-## Repository map
+MyVulna private kaynak reposu private kalır. Public issue veya pull request içinde kaynak kod, schema detayı, exploit adımı, secret, tenant/müşteri verisi veya production kanıtı paylaşılmaz.
+
+## Security and disclosure · Güvenlik bildirimi
+
+Security reports must follow [SECURITY.md](SECURITY.md). Do not publish vulnerability details in public issues.
+
+Güvenlik bildirimleri [SECURITY.md](SECURITY.md) üzerinden ilerlemelidir. Zafiyet detayları public issue içinde paylaşılmamalıdır.
+
+## Repository map · Repo haritası
 
 ```text
 myvulna-public/
-  README.md                         Public product surface
+  README.md                         Public TR/EN product showcase
   SECURITY.md                       Coordinated vulnerability reporting policy
-  SUPPORT.md                        Safe support and issue guidance
-  CHANGELOG.md                      Non-sensitive public changes
+  SUPPORT.md                        Public-safe support guidance
+  CHANGELOG.md                      Public-safe change log
   docs/
     PUBLIC_SCOPE.md                 Public/private boundary rules
-    SECURITY_AND_PRIVACY.md         High-level security posture
-    RELEASE_NOTES.md                Public release notes template
+    SECURITY_AND_PRIVACY.md         High-level security and privacy posture
+    RELEASE_NOTES.md                Public release-note template
   scripts/
-    validate-public-repo.mjs        Local guard against accidental leaks
+    validate-public-repo.mjs        Leak-prevention guard for this public repo
 ```
 
-## Safe contribution rules
+## Validation · Yayın öncesi kontrol
 
-- Use sanitized, high-level descriptions.
-- Do not include secrets, tokens, database URLs, tenant IDs, customer names, logs, screenshots, exploit chains, or production traces.
-- Do not include private repository file paths when they reveal internal implementation details.
-- Do not publish vulnerability details in public issues; follow [SECURITY.md](SECURITY.md).
-- Keep this repository documentation-only unless a maintainer explicitly approves a public asset.
-
-## Validate before publishing
-
-Run the public-safety guard before every commit:
+Run before every commit:
 
 ```bash
 npm run validate
 ```
 
-The validator blocks known sensitive paths, environment files, private source directories, operational security records, large/binary artifacts, and common secret patterns.
+Recommended public release gate:
 
-## Links
+```bash
+npm run validate
+gitleaks detect --source . --redact --exit-code 1
+git diff --cached --check
+```
 
-- Security policy: [SECURITY.md](SECURITY.md)
-- Support policy: [SUPPORT.md](SUPPORT.md)
-- Public scope: [docs/PUBLIC_SCOPE.md](docs/PUBLIC_SCOPE.md)
-- Security and privacy posture: [docs/SECURITY_AND_PRIVACY.md](docs/SECURITY_AND_PRIVACY.md)
-- Public release notes: [docs/RELEASE_NOTES.md](docs/RELEASE_NOTES.md)
+The validator blocks sensitive paths, environment files, private source directories, operational security records, binary-like files, and common secret patterns.
+
+## Public links · Bağlantılar
+
+| Destination | Link |
+| --- | --- |
+| Live product | [myvuln.io](https://myvuln.io/) |
+| Security policy | [SECURITY.md](SECURITY.md) |
+| Support policy | [SUPPORT.md](SUPPORT.md) |
+| Public scope | [docs/PUBLIC_SCOPE.md](docs/PUBLIC_SCOPE.md) |
+| Security and privacy | [docs/SECURITY_AND_PRIVACY.md](docs/SECURITY_AND_PRIVACY.md) |
+| Public release notes | [docs/RELEASE_NOTES.md](docs/RELEASE_NOTES.md) |
+
+---
+
+<div align="center">
+
+<strong>Private source. Public trust surface. Clear security boundaries.</strong>
+
+<br />
+<br />
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;height=95&amp;color=0:f59e0b,45:0f766e,100:020617&amp;section=footer" alt="MyVulna footer wave" />
+
+</div>
