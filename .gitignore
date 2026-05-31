@@ -1,0 +1,39 @@
+# Dependencies and build output
+node_modules/
+.next/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+output/
+
+# Local logs and temporary files
+*.log
+tmp/
+*.tmp
+*.tsbuildinfo
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.sqlite
+*.db
+
+# Private source and operational material must not enter this public repo
+src/
+supabase/
+docs/security/
+docs/operations/
+.mcp.json
+.claude/
+.serena/
+.playwright-mcp/
+.vscode/

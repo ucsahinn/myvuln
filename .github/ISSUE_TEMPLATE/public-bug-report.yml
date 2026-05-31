@@ -1,0 +1,49 @@
+name: Public-safe bug report
+description: Report a public-safe MyVulna issue without sensitive data.
+title: "[Public Bug]: "
+labels: ["public-safe", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, vulnerability details, exploit steps, tenant data, customer data, production logs, stack traces, screenshots with sensitive content, internal URLs, or private source code.
+  - type: input
+    id: area
+    attributes:
+      label: Product area
+      description: Example: dashboard, Intel Feed, API v1, alerting, exports, reports, docs.
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the issue with sanitized, public-safe wording.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Sanitized steps
+      description: Provide reproduction steps without private data or security bypass details.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I did not include secrets, tokens, cookies, private keys, customer data, tenant data, production logs, stack traces, exploit details, or private source code.
+          required: true

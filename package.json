@@ -1,0 +1,12 @@
+{
+  "name": "myvulna-public",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public-safe product hub for MyVulna. Source code and operational security material remain private.",
+  "scripts": {
+    "validate": "node scripts/validate-public-repo.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
