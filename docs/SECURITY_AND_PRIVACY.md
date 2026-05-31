@@ -1,8 +1,8 @@
 # Security And Privacy Posture / Güvenlik ve gizlilik duruşu
 
-MyVulna is designed as a security operations product. This public repository intentionally describes the posture at a high level without publishing implementation details that would weaken the private product.
+MyVuln is designed as a security operations product. This public repository intentionally describes the posture at a high level without publishing implementation details that would weaken the private product.
 
-MyVulna bir güvenlik operasyon ürünü olarak tasarlanır. Bu public repo, private ürünü zayıflatabilecek uygulama detaylarını yayınlamadan yalnızca yüksek seviyeli güvenlik ve gizlilik duruşunu anlatır.
+MyVuln bir güvenlik operasyon ürünü olarak tasarlanır. Bu public repo, private ürünü zayıflatabilecek uygulama detaylarını yayınlamadan yalnızca yüksek seviyeli güvenlik ve gizlilik duruşunu anlatır.
 
 ## Public principles / Public ilkeler
 
@@ -10,7 +10,9 @@ MyVulna bir güvenlik operasyon ürünü olarak tasarlanır. Bu public repo, pri
 - Secrets remain in environment variables or secret-management systems, never in source control.
 - Service-role and privileged credentials stay server-side.
 - Public API access is API-key protected.
+- External integrations are scoped to the public `/api/v1/*` contract.
 - Authentication and authorization are enforced server-side.
+- Role boundaries and tenant-aware access are described publicly without publishing policy internals.
 - Tenant and customer data must not appear in public issues, docs, screenshots, or logs.
 - Security reports use a private disclosure path.
 
@@ -20,7 +22,9 @@ Türkçe:
 - Secret'lar source control içinde değil, environment veya secret-management sistemlerinde tutulur.
 - Service-role ve ayrıcalıklı credential'lar server-side kalır.
 - Public API erişimi API-key korumalıdır.
+- External entegrasyonlar public `/api/v1/*` sözleşmesiyle sınırlıdır.
 - Authentication ve authorization server-side enforce edilir.
+- Rol sınırları ve tenant-aware erişim policy iç detayları yayınlanmadan anlatılır.
 - Tenant ve müşteri verisi public issue, doküman, screenshot veya log içinde yer almaz.
 - Güvenlik bildirimleri private disclosure path üzerinden ilerler.
 

@@ -1,13 +1,15 @@
 # Public Scope / Public Kapsam
 
-This document defines what may and may not be published in `myvulna-public`.
+This document defines what may and may not be published in this public MyVuln repository.
 
-Bu doküman `myvulna-public` içinde neyin yayınlanabileceğini ve neyin kesin olarak private kalması gerektiğini tanımlar.
+Bu doküman public MyVuln reposu içinde neyin yayınlanabileceğini ve neyin kesin olarak private kalması gerektiğini tanımlar.
 
 ## Allowed / Yayınlanabilir
 
 - High-level product descriptions.
 - Public-safe feature summaries.
+- Links to live public docs such as `https://myvuln.io/docs`.
+- Public API endpoint names and high-level behavior for `/api/v1/*`.
 - Support and security reporting policies.
 - Non-sensitive release notes.
 - Public roadmap language that does not expose internal architecture.
@@ -17,6 +19,8 @@ Türkçe:
 
 - Üst seviye ürün anlatımı.
 - Public-safe özellik özetleri.
+- `https://myvuln.io/docs` gibi canlı public dokümantasyon linkleri.
+- `/api/v1/*` için public endpoint adları ve üst seviye davranış özetleri.
 - Destek ve güvenlik bildirim politikaları.
 - Hassas bilgi içermeyen yayın notları.
 - İç mimariyi açığa çıkarmayan roadmap dili.

@@ -1,10 +1,11 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;height=185&amp;color=0:020617,45:0f766e,100:f59e0b&amp;section=header&amp;text=MyVulna&amp;fontColor=fff7ed&amp;fontSize=58&amp;fontAlignY=34&amp;desc=Threat%20intelligence%20workspace%20for%20security%20teams&amp;descAlignY=58&amp;descSize=17" alt="MyVulna public repository banner" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;height=185&amp;color=0:020617,45:0f766e,100:f59e0b&amp;section=header&amp;text=MyVuln&amp;fontColor=fff7ed&amp;fontSize=58&amp;fontAlignY=34&amp;desc=Threat%20intelligence%20workspace%20for%20security%20teams&amp;descAlignY=58&amp;descSize=17" alt="MyVuln public repository banner" />
 
 ### CVE intelligence · URL analysis · Intel Feed · API v1 · Alerting · Reports
 
 [![Live product](https://img.shields.io/badge/live-myvuln.io-0f766e?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://myvuln.io/)
+[![Docs](https://img.shields.io/badge/docs-myvuln.io%2Fdocs-0891b2?style=for-the-badge&logo=readthedocs&logoColor=white)](https://myvuln.io/docs)
 [![Public boundary](https://img.shields.io/badge/public%20repo-docs%20only-111827?style=for-the-badge&logo=github&logoColor=white)](#public-repository-boundary--public-repo-siniri)
 [![Private source](https://img.shields.io/badge/source-private-f59e0b?style=for-the-badge&logo=github&logoColor=111827)](#public-repository-boundary--public-repo-siniri)
 [![Security policy](https://img.shields.io/badge/security-policy-ef4444?style=for-the-badge&logo=securityscorecard&logoColor=white)](SECURITY.md)
@@ -23,19 +24,23 @@
 
 ## Türkçe
 
-MyVulna; güvenlik ekipleri, analistler ve operasyon tarafı için tasarlanmış çok kiracılı bir tehdit istihbaratı platformudur. CVE takibi, URL istihbaratı, Intel Feed, API entegrasyonları, uyarı akışları ve raporlama süreçlerini tek bir çalışma yüzeyinde toplar.
+MyVuln; güvenlik ekipleri, analistler ve operasyon tarafı için tasarlanmış çok kiracılı bir tehdit istihbaratı platformudur. CVE takibi, URL istihbaratı, Intel Feed, API entegrasyonları, uyarı akışları ve raporlama süreçlerini tek bir çalışma yüzeyinde toplar.
 
 Canlı ürün: [https://myvuln.io/](https://myvuln.io/)
 
-Bu repo kaynak kod deposu değildir. MyVulna'nın public vitrin, destek, güvenlik politikası ve yayın notları yüzeyidir. Private kaynak kod, Supabase migration'ları, operasyon SQL'leri, iç güvenlik kayıtları, müşteri/tenant verileri ve secret içeren hiçbir dosya burada tutulmaz.
+Canlı dokümantasyon: [https://myvuln.io/docs](https://myvuln.io/docs)
+
+Bu repo kaynak kod deposu değildir. MyVuln'in public vitrin, destek, güvenlik politikası ve yayın notları yüzeyidir. Private kaynak kod, Supabase migration'ları, operasyon SQL'leri, iç güvenlik kayıtları, müşteri/tenant verileri ve secret içeren hiçbir dosya burada tutulmaz.
 
 ## English
 
-MyVulna is a multi-tenant threat intelligence platform for security teams, analysts, and operational workflows. It brings CVE tracking, URL intelligence, Intel Feed review, API integrations, alerting, exports, and reporting into a single product surface.
+MyVuln is a multi-tenant threat intelligence platform for security teams, analysts, and operational workflows. It brings CVE tracking, URL intelligence, Intel Feed review, API integrations, alerting, exports, and reporting into a single product surface.
 
 Live product: [https://myvuln.io/](https://myvuln.io/)
 
-This is not the source-code repository. This public repository is the safe product hub for MyVulna: overview, support, security policy, and public release notes. Source code, Supabase migrations, operational SQL, internal security records, customer/tenant data, and secrets stay private.
+Live documentation: [https://myvuln.io/docs](https://myvuln.io/docs)
+
+This is not the source-code repository. This public repository is the safe product hub for MyVuln: overview, support, security policy, and public release notes. Source code, Supabase migrations, operational SQL, internal security records, customer/tenant data, and secrets stay private.
 
 ---
 
@@ -68,6 +73,24 @@ This is not the source-code repository. This public repository is the safe produ
   </tr>
 </table>
 
+## Live docs reference · Canlı doküman referansı
+
+The public product docs at [myvuln.io/docs](https://myvuln.io/docs) describe the current public surface for operators and integrators. This repository mirrors only safe, high-level summaries and links back to the live docs for the active product contract.
+
+[myvuln.io/docs](https://myvuln.io/docs) üzerindeki canlı ürün dokümantasyonu operatör ve entegrasyon ekipleri için güncel public yüzeyi anlatır. Bu repo yalnızca güvenli, üst seviye özetleri tutar ve aktif ürün sözleşmesi için canlı dokümantasyona yönlendirir.
+
+| Public surface | What it covers | Türkçe |
+| --- | --- | --- |
+| Intelligence workspace | CVE dashboard, CVE database, IoC database, USOM intelligence, Intel Feed, Intelligence Terminal. | CVE paneli, CVE veritabanı, IoC veritabanı, USOM istihbaratı, Intel Feed ve Intelligence Terminal. |
+| Public API v1 | CVE feed/search, URL feed/search, SIEM/webhook dispatch. | CVE feed/search, URL feed/search ve SIEM/webhook aktarımı. |
+| Operations | World Threat Map, reports, analytics, system logs, SMTP and webhook alert routing. | World Threat Map, raporlar, analitik, sistem logları, SMTP ve webhook uyarı akışı. |
+| Administration | Team management, role boundaries, API key lifecycle, account controls. | Ekip yönetimi, rol sınırları, API key yaşam döngüsü ve hesap kontrolleri. |
+
+See also:
+
+- [Public API v1 summary](docs/API_V1.md)
+- [Capabilities](docs/CAPABILITIES.md)
+
 ## Operating model · Çalışma modeli
 
 | Area | English | Türkçe |
@@ -76,6 +99,20 @@ This is not the source-code repository. This public repository is the safe produ
 | Triage | Review queues, status tracking, enrichment, and reporting handoff. | İnceleme kuyrukları, durum takibi, zenginleştirme ve raporlama aktarımı. |
 | Integrations | API v1, alerting, webhook, SMTP, and export workflows. | API v1, uyarı, webhook, SMTP ve export iş akışları. |
 | Governance | Private source, public-safe docs, coordinated vulnerability reporting. | Private kaynak, public-safe dokümantasyon, koordineli zafiyet bildirimi. |
+
+## Public API v1 · Public API v1
+
+The external integration contract is limited to `/api/v1/*`. Public docs currently cover:
+
+| Method | Endpoint | Purpose |
+| --- | --- | --- |
+| GET | `/api/v1/feed/cves` | Normalized CVE feed with filtering and pagination. |
+| GET | `/api/v1/search/cves` | Analyst-oriented CVE search with relevance ordering. |
+| GET | `/api/v1/feed/urls` | URL/domain indicator feed with deduplication controls. |
+| GET | `/api/v1/search/urls` | URL/domain search for investigation workflows. |
+| POST | `/api/v1/integrations/siem/dispatch` | Splunk, Sentinel, or generic webhook dispatch flow. |
+
+Authentication, limits, response headers, and response examples are documented in the live docs: [myvuln.io/docs](https://myvuln.io/docs).
 
 ## Technical posture · Teknik konum
 
@@ -91,13 +128,13 @@ This is not the source-code repository. This public repository is the safe produ
     </td>
     <td width="33%">
       <h3>Security</h3>
-      <p>Tenant-aware design, API-key integration boundary, private disclosure path.</p>
+      <p>Tenant-aware design, API-key integration boundary, RBAC, private disclosure path.</p>
     </td>
   </tr>
 </table>
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,supabase,postgres,nodejs" alt="MyVulna core technology icons" />
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,supabase,postgres,nodejs" alt="MyVuln core technology icons" />
 </p>
 
 ## Public repository boundary · Public repo sınırı
@@ -111,9 +148,9 @@ This is not the source-code repository. This public repository is the safe produ
 | Non-sensitive release notes | Production logs, screenshots, tenant data, customer data |
 | Public-safety validation script | API keys, signing keys, tokens, cookies |
 
-The private MyVulna development repository remains private. Public issues and pull requests must not contain source code, schema details, exploit steps, secrets, tenant/customer data, or production evidence.
+The private MyVuln development repository remains private. Public issues and pull requests must not contain source code, schema details, exploit steps, secrets, tenant/customer data, or production evidence.
 
-MyVulna private kaynak reposu private kalır. Public issue veya pull request içinde kaynak kod, schema detayı, exploit adımı, secret, tenant/müşteri verisi veya production kanıtı paylaşılmaz.
+MyVuln private kaynak reposu private kalır. Public issue veya pull request içinde kaynak kod, schema detayı, exploit adımı, secret, tenant/müşteri verisi veya production kanıtı paylaşılmaz.
 
 ## Security and disclosure · Güvenlik bildirimi
 
@@ -124,12 +161,14 @@ Güvenlik bildirimleri [SECURITY.md](SECURITY.md) üzerinden ilerlemelidir. Zafi
 ## Repository map · Repo haritası
 
 ```text
-myvulna-public/
+myvuln/
   README.md                         Public TR/EN product showcase
   SECURITY.md                       Coordinated vulnerability reporting policy
   SUPPORT.md                        Public-safe support guidance
   CHANGELOG.md                      Public-safe change log
   docs/
+    API_V1.md                      Public API v1 summary linked to live docs
+    CAPABILITIES.md                Public product capability map
     PUBLIC_SCOPE.md                 Public/private boundary rules
     SECURITY_AND_PRIVACY.md         High-level security and privacy posture
     RELEASE_NOTES.md                Public release-note template
@@ -160,6 +199,9 @@ The validator blocks sensitive paths, environment files, private source director
 | Destination | Link |
 | --- | --- |
 | Live product | [myvuln.io](https://myvuln.io/) |
+| Live docs | [myvuln.io/docs](https://myvuln.io/docs) |
+| Public API v1 summary | [docs/API_V1.md](docs/API_V1.md) |
+| Capabilities | [docs/CAPABILITIES.md](docs/CAPABILITIES.md) |
 | Security policy | [SECURITY.md](SECURITY.md) |
 | Support policy | [SUPPORT.md](SUPPORT.md) |
 | Public scope | [docs/PUBLIC_SCOPE.md](docs/PUBLIC_SCOPE.md) |
@@ -175,6 +217,6 @@ The validator blocks sensitive paths, environment files, private source director
 <br />
 <br />
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;height=95&amp;color=0:f59e0b,45:0f766e,100:020617&amp;section=footer" alt="MyVulna footer wave" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;height=95&amp;color=0:f59e0b,45:0f766e,100:020617&amp;section=footer" alt="MyVuln footer wave" />
 
 </div>

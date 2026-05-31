@@ -1,8 +1,8 @@
 # Support / Destek
 
-Use this repository for public-safe MyVulna support and documentation issues only.
+Use this repository for public-safe MyVuln support and documentation issues only.
 
-Bu repo yalnızca public-safe MyVulna destek ve dokümantasyon konuları için kullanılmalıdır.
+Bu repo yalnızca public-safe MyVuln destek ve dokümantasyon konuları için kullanılmalıdır.
 
 ## Good public issue content / Uygun public issue içeriği
 
@@ -46,6 +46,6 @@ Güvenlik bildirimleri [SECURITY.md](SECURITY.md) üzerinden ilerlemelidir. Hass
 
 ## Private source policy / Private kaynak politikası
 
-The MyVulna source repository remains private. This public repository does not accept source-code pull requests unless a maintainer explicitly asks for a specific public-safe documentation change.
+The MyVuln source repository remains private. This public repository does not accept source-code pull requests unless a maintainer explicitly asks for a specific public-safe documentation change.
 
-MyVulna kaynak reposu private kalır. Maintainer açıkça public-safe dokümantasyon değişikliği istemedikçe bu repo source-code pull request kabul etmez.
+MyVuln kaynak reposu private kalır. Maintainer açıkça public-safe dokümantasyon değişikliği istemedikçe bu repo source-code pull request kabul etmez.

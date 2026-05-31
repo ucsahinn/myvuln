@@ -1,8 +1,8 @@
 # Security Policy / Güvenlik politikası
 
-MyVulna is security-sensitive software. The private source repository, operational runbooks, schema details, internal reports, customer data, production logs, credentials, and infrastructure configuration are not part of this public repository.
+MyVuln is security-sensitive software. The private source repository, operational runbooks, schema details, internal reports, customer data, production logs, credentials, and infrastructure configuration are not part of this public repository.
 
-MyVulna güvenlik hassasiyeti yüksek bir üründür. Private kaynak repo, operasyon runbook'ları, schema detayları, internal raporlar, müşteri verisi, production log'ları, credential'lar ve altyapı konfigürasyonu bu public repo kapsamında değildir.
+MyVuln güvenlik hassasiyeti yüksek bir üründür. Private kaynak repo, operasyon runbook'ları, schema detayları, internal raporlar, müşteri verisi, production log'ları, credential'lar ve altyapı konfigürasyonu bu public repo kapsamında değildir.
 
 ## Reporting a vulnerability / Zafiyet bildirimi
 
@@ -66,7 +66,7 @@ Never include:
 
 In scope:
 
-- MyVulna application behavior.
+- MyVuln application behavior.
 - Authentication, authorization, tenant isolation, and API access-control issues.
 - Data exposure, unsafe redirects, injection, XSS, CSRF, SSRF, file handling, and alerting/reporting abuse paths.
 - Public repository leak risks.
