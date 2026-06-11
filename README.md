@@ -44,6 +44,25 @@ This is not the source-code repository. This public repository is the safe produ
 
 ---
 
+## Start here · Hızlı geçiş
+
+| Need | Start with | Public-safe outcome |
+| --- | --- | --- |
+| Understand the live product surface | [myvuln.io](https://myvuln.io/) and [myvuln.io/docs](https://myvuln.io/docs) | Product capabilities, operator workflows and integration boundaries are clear. |
+| Review API integration scope | [Public API v1 summary](docs/API_V1.md) | External automation paths stay limited to the documented `/api/v1/*` contract. |
+| Check what this public repo may contain | [Public scope](docs/PUBLIC_SCOPE.md) | Source code, operational SQL, tenant data and secrets remain out of the public tree. |
+| Report a vulnerability safely | [Security policy](SECURITY.md) | Disclosure moves through the private channel instead of public issues. |
+| Ask for support without leaking evidence | [Support policy](SUPPORT.md) | Redacted, high-signal context replaces logs, tokens, tenant data or private screenshots. |
+
+## Enterprise trust signals · Kurumsal güven sinyalleri
+
+| Signal | What it means | Boundary |
+| --- | --- | --- |
+| Public/private split | This repository is a safe trust surface, not the application source tree. | Private source, migrations, tenant data, logs and secrets stay out. |
+| Live-docs contract | Current product behavior is anchored in the hosted docs, with this repo mirroring safe summaries. | Stale local copies should not override the live product contract. |
+| API v1 boundary | Integrations are documented around a small external API surface. | Undocumented internal routes are not public integration targets. |
+| Coordinated disclosure | Security reports use the private reporting path. | Public issues must not include exploit detail, secrets or customer evidence. |
+
 ## Product snapshot · Ürün özeti
 
 <table>
