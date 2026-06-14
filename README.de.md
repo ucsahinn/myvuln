@@ -1,64 +1,152 @@
-# MyVuln
+# &#128737; MyVuln - vollständige deutsche README
 
-<p align="center">
-  <a href="README.de.md">&#127465;&#127466; Deutsch</a> ? <a href="README.es.md">&#127466;&#127480; Espa&ntilde;ol</a> ? <a href="README.md">&#127468;&#127463; English</a> ? <a href="README.pt-BR.md">&#127463;&#127479; Portugu&ecirc;s (Brasil)</a> ? <a href="README.tr.md">&#127481;&#127479; T&uuml;rk&ccedil;e</a> ? <a href="README.fr.md">&#127467;&#127479; French</a>
-</p>
+[&#127468;&#127463; English](README.md) | [&#127465;&#127466; Deutsch](README.de.md) | [&#127466;&#127480; Español](README.es.md) | [&#127463;&#127479; Português (Brasil)](README.pt-BR.md) | [&#127481;&#127479; Türkçe](README.tr.md) | [&#127467;&#127479; Français](README.fr.md)
 
-Public-safe Produkt- und Support-Hub fuer eine Threat-Intelligence-Arbeitsflaeche mit CVE-Tracking, URL-Analyse, Intel Feed, API, Alerts und Reports.
+> Diese Datei ist eine vollständige deutsche Einstiegseite, kein kurzer Platzhalter. Sie fasst Zweck, Grenzen, Bedienung, Prüfung, Sicherheit und Veröffentlichung in einer Datei zusammen.
+>
+> Kanonische englische README: [README.md](README.md)
 
-## Warum dieses Repository existiert
+Public-safe product hub for CVE intelligence, URL analysis, intel feed, API v1, alerting and reports.
 
-Public-safe Produkt- und Support-Hub fuer eine Threat-Intelligence-Arbeitsflaeche mit CVE-Tracking, URL-Analyse, Intel Feed, API, Alerts und Reports.
+Beginnen Sie mit der kanonischen README, wenn Sie die aktuellste englische Beschreibung brauchen. Verwenden Sie diese Seite, wenn Sie den gleichen Vertrag auf Deutsch lesen wollen.
 
-Diese lokalisierte Startseite wird gepflegt, damit Leser das Repository nicht nur ueber ein kurzes Sprach-Badge verstehen muessen. Die tiefe kanonische Referenz bleibt in README.md; diese Seite enthaelt genug Kontext, um den richtigen Einstieg, die Sicherheitsgrenze und die Verifikation zu waehlen.
+## Status und Vertrauensrahmen
 
-## Fuer wen es gedacht ist
+|Bereich | Details|
+|--- | ---|
+|Status | Public repository: ucsahinn/myvuln|
+|Wahrheit | [Kanonische englische README](README.md)|
+|Benutzer | Security teams evaluating MyVuln publicly.; Developers checking API v1 documentation.|
+|Prüfung | Public docs links resolve.; No private endpoints, customer data, tokens or raw findings are exposed.|
+|Sicherheit | States the public repository boundary clearly.; Keeps source code and operational security material private.|
 
-Security-Teams, Analysten, Integratoren und Reviewer, die den oeffentlichen MyVuln-Umfang verstehen oder Support sicher vorbereiten wollen.
+## Was dieses Repository ist
+
+- A public product information hub for MyVuln.
+- A documentation surface for vulnerability intelligence capabilities.
+- A safe place to describe API v1, reports, alerts, intel feed and product posture.
+- A release-independent repo for public docs and disclosure routes.
+
+## Was es nicht ist
+
+- Not the private application source tree.
+- Not a live threat-intelligence database.
+- Not a place for customer findings, API keys, scan results or credentials.
+- Not a substitute for authenticated product documentation where private access is required.
+
+## Für wen es gedacht ist
+
+- Security teams evaluating MyVuln publicly.
+- Developers checking API v1 documentation.
+- Report and alerting users needing capability context.
+- Maintainers preparing public-safe product copy.
 
 ## Schnellstart
 
-| Wenn du brauchst... | Oeffne |
-| --- | --- |
-| Live product | [https://myvuln.io/](https://myvuln.io/) |
-| Live docs | [https://myvuln.io/docs](https://myvuln.io/docs) |
-| Public scope | [docs/PUBLIC_SCOPE.md](docs/PUBLIC_SCOPE.md) |
-| Capabilities | [docs/CAPABILITIES.md](docs/CAPABILITIES.md) |
-| API v1 | [docs/API_V1.md](docs/API_V1.md) |
-| Security policy | [SECURITY.md](SECURITY.md) |
-| Support policy | [SUPPORT.md](SUPPORT.md) |
+1. Repository klonen oder aktualisieren.
+2. README, Sicherheitsdateien und Dokumentationskarte lesen.
+3. Die passenden Prüfungen ausführen.
+4. Nur explizit geänderte Dateien stagen.
+5. Vor Push oder Release Remote-Status, Secrets und Links erneut prüfen.
+
+## Entscheidungshilfe
+
+- Need public capability overview -> read docs/CAPABILITIES.md.
+- Need API details -> read docs/API_V1.md.
+- Need security and privacy posture -> read docs/SECURITY_AND_PRIVACY.md.
+- Need what is intentionally excluded -> read docs/PUBLIC_SCOPE.md.
 
 ## Repository-Karte
 
-- README.md - public product overview
-- docs/README.md - public docs index
-- docs/PUBLIC_SCOPE.md - source/public boundary
-- docs/CAPABILITIES.md - product capabilities
-- docs/API_V1.md - public API summary
-- SECURITY.md / SUPPORT.md - disclosure and support rules
+|Pfad | Warum es wichtig ist|
+|--- | ---|
+|[docs/CAPABILITIES.md](docs/CAPABILITIES.md) | product capabilities|
+|[docs/API_V1.md](docs/API_V1.md) | public API v1 documentation|
+|[docs/SECURITY_AND_PRIVACY.md](docs/SECURITY_AND_PRIVACY.md) | security and privacy posture|
+|[docs/PUBLIC_SCOPE.md](docs/PUBLIC_SCOPE.md) | public repo boundary|
+|[scripts/validate-public-repo.mjs](scripts/validate-public-repo.mjs) | public docs validator|
+|[SECURITY.md](SECURITY.md) | disclosure policy|
+|[SUPPORT.md](SUPPORT.md) | support route|
 
-## Validierung und Release-Hygiene
+## Arbeitsablauf
 
-Vor Commit oder Veroeffentlichung sollten Links, Markdown, vorhandene Repo-Validierung und Gitleaks geprueft werden.
+1. Update public product copy only from approved public facts.
+2. Keep private source, customer data and operational signals out of the repo.
+3. Validate docs before commit.
+4. Run secret scan before push.
+5. Verify GitHub rendering and remote HEAD after publication.
 
-Empfohlener Release-/Readiness-Pfad:
+## Befehle und Prüfung
 
-1. Relevante README und verlinkte Dokumente pruefen.
-2. Die Validierung des Repositories ausfuehren, wenn ein Befehl vorhanden ist.
-3. Markdown-Links und lokale Assets kontrollieren.
-4. Gitleaks oder den konfigurierten Secret Scan ausfuehren.
-5. Nach dem Push origin/main pruefen, bevor Veroeffentlichung als erledigt gemeldet wird.
+Führen Sie diese Befehle nur aus, wenn Sie das Repository lokal geclont haben und die Wirkung verstehen.
 
-## Sicherheits- und Public-Scope-Grenze
+```powershell
+npm run validate
+node scripts/validate-public-repo.mjs
+git diff --check
+gitleaks dir . --no-banner --redact
+```
 
-Dieses Repo ist keine Source-Code-Ablage. Private App-Quelle, Supabase-Migrationen, operative SQLs, Tenant-Daten, Logs und Secrets bleiben privat.
+## Validierungs-Checkliste
 
-## Mitwirken und Pflege
+- Public docs links resolve.
+- No private endpoints, customer data, tokens or raw findings are exposed.
+- API v1 wording stays aligned with docs/API_V1.md.
+- Support and security routes are visible.
+- Remote HEAD is verified after push.
 
-Halten Sie lokalisierte Seiten synchron mit der kanonischen README, wenn sich Scope, Installationsschritte, Release-Regeln oder Sicherheitsgrenzen aendern. Fuegen Sie keine Aussagen hinzu, die nicht durch Repository, Live-Produktdokumentation oder oeffentliche Release-Nachweise gedeckt sind.
+## Sicherheitsgrenze
 
-## Vollstaendigkeitsstandard
+- States the public repository boundary clearly.
+- Keeps source code and operational security material private.
+- Documents API v1, capabilities, security and privacy posture.
+- Includes a public repository validator.
 
-Diese lokalisierte README ist keine Kurznotiz. Sie erklaert Zweck, Einstieg, Repository-Flaechen, Validierung, Sicherheitsgrenze und kanonische Referenzen.
+Public-safe rule: do not add secrets, tokens, cookies, private keys, private prompts, customer data, local-only auth files, generated logs, archives or build outputs unless the canonical README explicitly says they belong in the public repo.
 
-Kanonische Referenz: [README.md](README.md).
+## Release- und Publikationshygiene
+
+- This repo publishes public documentation, not private product builds.
+- Do not attach datasets, dumps or scanner outputs.
+- Update changelog/release notes only when public docs contract changes.
+- Push only after validation and secret scan.
+
+## Wartung
+
+- Keep this localized README aligned with README.md when the repo contract changes.
+- Prefer factual repo links over marketing claims.
+- Do not invent install commands, metrics, users, releases or support promises.
+- If a command is version-sensitive, re-check it before documenting it.
+- When a localized file cannot be updated fully, leave a clear note instead of a partial translation.
+
+## Beitragspfad
+
+- Open a focused change against the smallest set of files.
+- Read AGENTS.md or CONTRIBUTING.md when present before editing.
+- Run the repo validation commands listed above.
+- Review staged diffs explicitly before commit.
+- Use security disclosure paths instead of public issues for sensitive reports.
+
+## Definition von fertig
+
+Fertig bedeutet: Inhalt ist lokal vollständig, Links funktionieren, Sicherheitsgrenzen sind klar, Validierung ist gelaufen, Git ist sauber und der Remote-Stand ist nach dem Push geprüft.
+
+|Empfehlung | Warum es wichtig ist|
+|--- | ---|
+|Content | Public-safe product hub for CVE intelligence, URL analysis, intel feed, API v1, alerting and reports.|
+|Links | All referenced local files must exist and resolve from the repository root.|
+|Security | No private endpoints, customer data, tokens or raw findings are exposed.|
+|Verification | Prüfen Sie Struktur, Links, Markdown, Secrets, relevante Skripte und Remote-HEAD, bevor Sie eine öffentliche Aussage machen.|
+|Remote | After push, compare local HEAD with origin/main and GitHub remote HEAD.|
+
+## Wichtige Links
+
+|Pfad | Warum es wichtig ist|
+|--- | ---|
+|[Canonical README](README.md) | README.md|
+|[Capabilities](docs/CAPABILITIES.md) | docs/CAPABILITIES.md|
+|[API v1](docs/API_V1.md) | docs/API_V1.md|
+|[Public scope](docs/PUBLIC_SCOPE.md) | docs/PUBLIC_SCOPE.md|
+|[Security and privacy](docs/SECURITY_AND_PRIVACY.md) | docs/SECURITY_AND_PRIVACY.md|
+|[Security policy](SECURITY.md) | SECURITY.md|
+|[Support](SUPPORT.md) | SUPPORT.md|

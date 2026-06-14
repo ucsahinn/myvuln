@@ -1,64 +1,152 @@
-# MyVuln
+# &#128737; MyVuln - eksiksiz Türkçe README
 
-<p align="center">
-  <a href="README.de.md">&#127465;&#127466; Deutsch</a> ? <a href="README.es.md">&#127466;&#127480; Espa&ntilde;ol</a> ? <a href="README.md">&#127468;&#127463; English</a> ? <a href="README.pt-BR.md">&#127463;&#127479; Portugu&ecirc;s (Brasil)</a> ? <a href="README.tr.md">&#127481;&#127479; T&uuml;rk&ccedil;e</a> ? <a href="README.fr.md">&#127467;&#127479; French</a>
-</p>
+[&#127468;&#127463; English](README.md) | [&#127465;&#127466; Deutsch](README.de.md) | [&#127466;&#127480; Español](README.es.md) | [&#127463;&#127479; Português (Brasil)](README.pt-BR.md) | [&#127481;&#127479; Türkçe](README.tr.md) | [&#127467;&#127479; Français](README.fr.md)
 
-CVE takibi, URL analizi, Intel Feed, API, uyarilar ve raporlar iceren threat intelligence yuzeyi icin public-safe urun ve destek hub i.
+> Bu dosya kısa bir özet değil, tam Türkçe giriş sayfasıdır. Amaç, sınır, kullanım, doğrulama, güvenlik ve yayın akışını tek yerde anlatır.
+>
+> Kanonik İngilizce README: [README.md](README.md)
 
-## Bu repo neden var
+Public-safe product hub for CVE intelligence, URL analysis, intel feed, API v1, alerting and reports.
 
-CVE takibi, URL analizi, Intel Feed, API, uyarilar ve raporlar iceren threat intelligence yuzeyi icin public-safe urun ve destek hub i.
+En güncel İngilizce anlatım için kanonik README ile başlayın. Aynı operasyonel sözleşmeyi Türkçe okumak için bu sayfayı kullanın.
 
-Bu lokalize giris sayfasi, okuyucunun repoyu kisa bir dil etiketine bakarak tahmin etmemesi icin tutulur. Derin kanonik referans README.md dosyasinda kalir; bu sayfa dogru baslangic noktasini, guvenlik sinirini ve dogrulama yolunu secmek icin yeterli baglam verir.
+## Durum ve güven sinyalleri
 
-## Kimler icin
+|Alan | Detay|
+|--- | ---|
+|Durum | Public repository: ucsahinn/myvuln|
+|Doğru kaynak | [Kanonik İngilizce README](README.md)|
+|Kullanıcılar | Security teams evaluating MyVuln publicly.; Developers checking API v1 documentation.|
+|Doğrulama | Public docs links resolve.; No private endpoints, customer data, tokens or raw findings are exposed.|
+|Güvenlik | States the public repository boundary clearly.; Keeps source code and operational security material private.|
 
-MyVuln in public kapsam?n? anlamak veya destek surecini veri sizdirmadan hazirlamak isteyen guvenlik ekipleri, analistler, entegratorler ve reviewer lar.
+## Bu repo nedir
 
-## Hizli baslangic
+- A public product information hub for MyVuln.
+- A documentation surface for vulnerability intelligence capabilities.
+- A safe place to describe API v1, reports, alerts, intel feed and product posture.
+- A release-independent repo for public docs and disclosure routes.
 
-| Ihtiyacin varsa... | Ac |
-| --- | --- |
-| Live product | [https://myvuln.io/](https://myvuln.io/) |
-| Live docs | [https://myvuln.io/docs](https://myvuln.io/docs) |
-| Public scope | [docs/PUBLIC_SCOPE.md](docs/PUBLIC_SCOPE.md) |
-| Capabilities | [docs/CAPABILITIES.md](docs/CAPABILITIES.md) |
-| API v1 | [docs/API_V1.md](docs/API_V1.md) |
-| Security policy | [SECURITY.md](SECURITY.md) |
-| Support policy | [SUPPORT.md](SUPPORT.md) |
+## Ne değildir
 
-## Repo haritasi
+- Not the private application source tree.
+- Not a live threat-intelligence database.
+- Not a place for customer findings, API keys, scan results or credentials.
+- Not a substitute for authenticated product documentation where private access is required.
 
-- README.md - public product overview
-- docs/README.md - public docs index
-- docs/PUBLIC_SCOPE.md - source/public boundary
-- docs/CAPABILITIES.md - product capabilities
-- docs/API_V1.md - public API summary
-- SECURITY.md / SUPPORT.md - disclosure and support rules
+## Kimler için
 
-## Validasyon ve release hijyeni
+- Security teams evaluating MyVuln publicly.
+- Developers checking API v1 documentation.
+- Report and alerting users needing capability context.
+- Maintainers preparing public-safe product copy.
 
-Commit veya yayin oncesinde linkler, Markdown, mevcut repo validasyonu ve Gitleaks kontrol edilmelidir.
+## Hızlı başlangıç
 
-Onerilen release/readiness yolu:
+1. Repoyu klonla veya güncelle.
+2. README, güvenlik ve doküman haritasını oku.
+3. Uygun doğrulamaları çalıştır.
+4. Sadece bilinçli değişen dosyaları stage et.
+5. Push veya release öncesi remote, secret ve link kontrollerini tekrar yap.
 
-1. Ilgili README ve bagli dokumanlari incele.
-2. Repo validasyon komutu varsa calistir.
-3. Markdown linklerini ve lokal assetleri kontrol et.
-4. Gitleaks veya yapilandirilmis secret scan i calistir.
-5. Push sonrasi yayinin bittigini soylemeden once origin/main dogrulamasi yap.
+## Karar rehberi
 
-## Guvenlik ve public scope siniri
+- Need public capability overview -> read docs/CAPABILITIES.md.
+- Need API details -> read docs/API_V1.md.
+- Need security and privacy posture -> read docs/SECURITY_AND_PRIVACY.md.
+- Need what is intentionally excluded -> read docs/PUBLIC_SCOPE.md.
 
-Bu repo kaynak kod deposu degildir. Private uygulama kodu, Supabase migration lari, operasyon SQL leri, tenant verileri, loglar ve secret lar private kalir.
+## Repo haritası
 
-## Katki ve bakim
+|Yol | Neden önemli|
+|--- | ---|
+|[docs/CAPABILITIES.md](docs/CAPABILITIES.md) | product capabilities|
+|[docs/API_V1.md](docs/API_V1.md) | public API v1 documentation|
+|[docs/SECURITY_AND_PRIVACY.md](docs/SECURITY_AND_PRIVACY.md) | security and privacy posture|
+|[docs/PUBLIC_SCOPE.md](docs/PUBLIC_SCOPE.md) | public repo boundary|
+|[scripts/validate-public-repo.mjs](scripts/validate-public-repo.mjs) | public docs validator|
+|[SECURITY.md](SECURITY.md) | disclosure policy|
+|[SUPPORT.md](SUPPORT.md) | support route|
 
-Scope, kurulum adimlari, release kurallari veya guvenlik sinirlari degistiginde lokalize sayfalari kanonik README ile ayni cizgide tut. Repo, canli urun dokumani veya public release kanitiyla desteklenmeyen iddia ekleme.
+## Çalışma akışı
 
-## Eksiksizlik standardi
+1. Update public product copy only from approved public facts.
+2. Keep private source, customer data and operational signals out of the repo.
+3. Validate docs before commit.
+4. Run secret scan before push.
+5. Verify GitHub rendering and remote HEAD after publication.
 
-Bu lokalize README kisa not degildir. Amac, baslangic, repo yuzeyleri, validasyon, guvenlik siniri ve kanonik referanslari aciklar.
+## Komutlar ve doğrulama
 
-Kanonik referans: [README.md](README.md).
+Bu komutları sadece repoyu yerelde klonladıktan ve neyi kontrol ettiklerini anladıktan sonra çalıştırın.
+
+```powershell
+npm run validate
+node scripts/validate-public-repo.mjs
+git diff --check
+gitleaks dir . --no-banner --redact
+```
+
+## Doğrulama listesi
+
+- Public docs links resolve.
+- No private endpoints, customer data, tokens or raw findings are exposed.
+- API v1 wording stays aligned with docs/API_V1.md.
+- Support and security routes are visible.
+- Remote HEAD is verified after push.
+
+## Güvenlik sınırı
+
+- States the public repository boundary clearly.
+- Keeps source code and operational security material private.
+- Documents API v1, capabilities, security and privacy posture.
+- Includes a public repository validator.
+
+Public-safe rule: do not add secrets, tokens, cookies, private keys, private prompts, customer data, local-only auth files, generated logs, archives or build outputs unless the canonical README explicitly says they belong in the public repo.
+
+## Release ve yayın hijyeni
+
+- This repo publishes public documentation, not private product builds.
+- Do not attach datasets, dumps or scanner outputs.
+- Update changelog/release notes only when public docs contract changes.
+- Push only after validation and secret scan.
+
+## Bakım
+
+- Keep this localized README aligned with README.md when the repo contract changes.
+- Prefer factual repo links over marketing claims.
+- Do not invent install commands, metrics, users, releases or support promises.
+- If a command is version-sensitive, re-check it before documenting it.
+- When a localized file cannot be updated fully, leave a clear note instead of a partial translation.
+
+## Katkı yolu
+
+- Open a focused change against the smallest set of files.
+- Read AGENTS.md or CONTRIBUTING.md when present before editing.
+- Run the repo validation commands listed above.
+- Review staged diffs explicitly before commit.
+- Use security disclosure paths instead of public issues for sensitive reports.
+
+## Bitti tanımı
+
+Bitti demek: içerik tam, linkler doğru, güvenlik sınırı net, doğrulama çalışmış, Git temiz ve push sonrası remote HEAD kontrol edilmiş demektir.
+
+|Öneri | Neden önemli|
+|--- | ---|
+|Content | Public-safe product hub for CVE intelligence, URL analysis, intel feed, API v1, alerting and reports.|
+|Links | All referenced local files must exist and resolve from the repository root.|
+|Security | No private endpoints, customer data, tokens or raw findings are exposed.|
+|Verification | Public bir iddia vermeden önce yapıyı, linkleri, Markdown’u, secret taramasını, ilgili scriptleri ve remote HEAD’i doğrula.|
+|Remote | After push, compare local HEAD with origin/main and GitHub remote HEAD.|
+
+## Önemli bağlantılar
+
+|Yol | Neden önemli|
+|--- | ---|
+|[Canonical README](README.md) | README.md|
+|[Capabilities](docs/CAPABILITIES.md) | docs/CAPABILITIES.md|
+|[API v1](docs/API_V1.md) | docs/API_V1.md|
+|[Public scope](docs/PUBLIC_SCOPE.md) | docs/PUBLIC_SCOPE.md|
+|[Security and privacy](docs/SECURITY_AND_PRIVACY.md) | docs/SECURITY_AND_PRIVACY.md|
+|[Security policy](SECURITY.md) | SECURITY.md|
+|[Support](SUPPORT.md) | SUPPORT.md|
