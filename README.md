@@ -4,6 +4,10 @@
 
 ### CVE intelligence · URL analysis · Intel Feed · API v1 · Alerting · Reports
 
+<p>
+  🌐 <strong>Languages:</strong> 🇩🇪 Deutsch · 🇪🇸 Español · 🇬🇧 English · 🇧🇷 Português (Brasil) · 🇹🇷 Türkçe · 🇫🇷 French
+</p>
+
 [![Live product](https://img.shields.io/badge/live-myvuln.io-0f766e?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://myvuln.io/)
 [![Docs](https://img.shields.io/badge/docs-myvuln.io%2Fdocs-0891b2?style=for-the-badge&logo=readthedocs&logoColor=white)](https://myvuln.io/docs)
 [![Public boundary](https://img.shields.io/badge/public%20repo-docs%20only-111827?style=for-the-badge&logo=github&logoColor=white)](#public-repository-boundary--public-repo-siniri)
