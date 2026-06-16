@@ -5,7 +5,7 @@
 ### CVE intelligence · URL analysis · Intel Feed · API v1 · Alerting · Reports
 
 <p>
-  &#127760; <strong>Languages:</strong>
+  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f310.svg" alt="" aria-hidden="true" width="20"> <strong>Languages:</strong>
   <a href="README.de.md"><img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width="20"></a> |
   <a href="README.es.md"><img src="https://flagcdn.com/w20/es.png" alt="Espa&#241;ol" width="20"></a> |
   <a href="README.md"><img src="https://flagcdn.com/w20/gb.png" alt="English" width="20"></a> |
@@ -50,7 +50,7 @@
 
 ---
 
-## Türkçe
+## <img src="https://flagcdn.com/w20/tr.png" alt="Türkçe" width="20"> Türkçe
 
 MyVuln; güvenlik ekipleri, analistler ve operasyon tarafı için tasarlanmış çok kiracılı bir tehdit istihbaratı platformudur. CVE takibi, URL istihbaratı, Intel Feed, API entegrasyonları, uyarı akışları ve raporlama süreçlerini tek bir çalışma yüzeyinde toplar.
 
@@ -60,7 +60,7 @@ Canlı dokümantasyon: [https://myvuln.io/docs](https://myvuln.io/docs)
 
 Bu repo kaynak kod deposu değildir. MyVuln'in public vitrin, destek, güvenlik politikası ve yayın notları yüzeyidir. Private kaynak kod, Supabase migration'ları, operasyon SQL'leri, iç güvenlik kayıtları, müşteri/tenant verileri ve secret içeren hiçbir dosya burada tutulmaz.
 
-## English
+## <img src="https://flagcdn.com/w20/gb.png" alt="English" width="20"> English
 
 MyVuln is a multi-tenant threat intelligence platform for security teams, analysts, and operational workflows. It brings CVE tracking, URL intelligence, Intel Feed review, API integrations, alerting, exports, and reporting into a single product surface.
 
@@ -72,55 +72,55 @@ This is not the source-code repository. This public repository is the safe produ
 
 ---
 
-## Start here · Hızlı geçiş
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/26a1.svg" alt="" aria-hidden="true" width="20"> Start here · Hızlı geçiş
 
 | Need | Start with | Public-safe outcome |
 | --- | --- | --- |
-| Understand the live product surface | [myvuln.io](https://myvuln.io/) and [myvuln.io/docs](https://myvuln.io/docs) | Product capabilities, operator workflows and integration boundaries are clear. |
-| Review API integration scope | [Public API v1 summary](docs/API_V1.md) | External automation paths stay limited to the documented `/api/v1/*` contract. |
-| Check what this public repo may contain | [Public scope](docs/PUBLIC_SCOPE.md) | Source code, operational SQL, tenant data and secrets remain out of the public tree. |
-| Report a vulnerability safely | [Security policy](SECURITY.md) | Disclosure moves through the private channel instead of public issues. |
-| Ask for support without leaking evidence | [Support policy](SUPPORT.md) | Redacted, high-signal context replaces logs, tokens, tenant data or private screenshots. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f310.svg" alt="" aria-hidden="true" width="20"> Understand the live product surface | [myvuln.io](https://myvuln.io/) and [myvuln.io/docs](https://myvuln.io/docs) | Product capabilities, operator workflows and integration boundaries are clear. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f50c.svg" alt="" aria-hidden="true" width="20"> Review API integration scope | [Public API v1 summary](docs/API_V1.md) | External automation paths stay limited to the documented `/api/v1/*` contract. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e1.svg" alt="" aria-hidden="true" width="20"> Check what this public repo may contain | [Public scope](docs/PUBLIC_SCOPE.md) | Source code, operational SQL, tenant data and secrets remain out of the public tree. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6a8.svg" alt="" aria-hidden="true" width="20"> Report a vulnerability safely | [Security policy](SECURITY.md) | Disclosure moves through the private channel instead of public issues. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9fe.svg" alt="" aria-hidden="true" width="20"> Ask for support without leaking evidence | [Support policy](SUPPORT.md) | Redacted, high-signal context replaces logs, tokens, tenant data or private screenshots. |
 
-## Enterprise trust signals · Kurumsal güven sinyalleri
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg" alt="" aria-hidden="true" width="20"> Enterprise trust signals · Kurumsal güven sinyalleri
 
 | Signal | What it means | Boundary |
 | --- | --- | --- |
-| Public/private split | This repository is a safe trust surface, not the application source tree. | Private source, migrations, tenant data, logs and secrets stay out. |
-| Live-docs contract | Current product behavior is anchored in the hosted docs, with this repo mirroring safe summaries. | Stale local copies should not override the live product contract. |
-| API v1 boundary | Integrations are documented around a small external API surface. | Undocumented internal routes are not public integration targets. |
-| Coordinated disclosure | Security reports use the private reporting path. | Public issues must not include exploit detail, secrets or customer evidence. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e1.svg" alt="" aria-hidden="true" width="20"> Public/private split | This repository is a safe trust surface, not the application source tree. | Private source, migrations, tenant data, logs and secrets stay out. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4da.svg" alt="" aria-hidden="true" width="20"> Live-docs contract | Current product behavior is anchored in the hosted docs, with this repo mirroring safe summaries. | Stale local copies should not override the live product contract. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f50c.svg" alt="" aria-hidden="true" width="20"> API v1 boundary | Integrations are documented around a small external API surface. | Undocumented internal routes are not public integration targets. |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6a8.svg" alt="" aria-hidden="true" width="20"> Coordinated disclosure | Security reports use the private reporting path. | Public issues must not include exploit detail, secrets or customer evidence. |
 
-## Product snapshot · Ürün özeti
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f50e.svg" alt="" aria-hidden="true" width="20"> Product snapshot · Ürün özeti
 
 <table>
   <tr>
     <td width="50%">
-      <h3>Threat intelligence workspace</h3>
+      <h3><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" alt="" aria-hidden="true" width="20"> Threat intelligence workspace</h3>
       <p>CVE, URL, and signal review workflows for analyst triage and investigation tracking.</p>
       <p><strong>TR:</strong> CVE, URL ve sinyal inceleme süreçleri için analist odaklı çalışma alanı.</p>
     </td>
     <td width="50%">
-      <h3>Intel Feed</h3>
+      <h3><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4e1.svg" alt="" aria-hidden="true" width="20"> Intel Feed</h3>
       <p>Operational feed surface for signal review, enrichment, deduplication, and handoff.</p>
       <p><strong>TR:</strong> Sinyal inceleme, zenginleştirme, tekrar azaltma ve aksiyon aktarımı için operasyonel feed.</p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h3>API v1 boundary</h3>
+      <h3><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f50c.svg" alt="" aria-hidden="true" width="20"> API v1 boundary</h3>
       <p>API-key protected integration surface for approved security automation and reporting flows.</p>
       <p><strong>TR:</strong> Onaylı otomasyon ve raporlama akışları için API-key korumalı entegrasyon yüzeyi.</p>
     </td>
     <td width="50%">
-      <h3>Alerts and reports</h3>
+      <h3><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ca.svg" alt="" aria-hidden="true" width="20"> Alerts and reports</h3>
       <p>SMTP, webhook, in-app alerts, exports, and report generation for security operations.</p>
       <p><strong>TR:</strong> SMTP, webhook, uygulama içi uyarı, export ve rapor üretimi.</p>
     </td>
   </tr>
 </table>
 
-## Live docs reference · Canlı doküman referansı
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f310.svg" alt="" aria-hidden="true" width="20"> Live docs reference · Canlı doküman referansı
 
 The public product docs at [myvuln.io/docs](https://myvuln.io/docs) describe the current public surface for operators and integrators. This repository mirrors only safe, high-level summaries and links back to the live docs for the active product contract.
 
@@ -138,7 +138,7 @@ See also:
 - [Public API v1 summary](docs/API_V1.md)
 - [Capabilities](docs/CAPABILITIES.md)
 
-## Operating model · Çalışma modeli
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ed.svg" alt="" aria-hidden="true" width="20"> Operating model · Çalışma modeli
 
 | Area | English | Türkçe |
 | --- | --- | --- |
@@ -147,7 +147,7 @@ See also:
 | Integrations | API v1, alerting, webhook, SMTP, and export workflows. | API v1, uyarı, webhook, SMTP ve export iş akışları. |
 | Governance | Private source, public-safe docs, coordinated vulnerability reporting. | Private kaynak, public-safe dokümantasyon, koordineli zafiyet bildirimi. |
 
-## Public API v1 · Public API v1
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f50c.svg" alt="" aria-hidden="true" width="20"> Public API v1 · Public API v1
 
 The external integration contract is limited to `/api/v1/*`. Public docs currently cover:
 
@@ -161,20 +161,20 @@ The external integration contract is limited to `/api/v1/*`. Public docs current
 
 Authentication, limits, response headers, and response examples are documented in the live docs: [myvuln.io/docs](https://myvuln.io/docs).
 
-## Technical posture · Teknik konum
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e0.svg" alt="" aria-hidden="true" width="20"> Technical posture · Teknik konum
 
 <table>
   <tr>
     <td width="33%">
-      <h3>Frontend</h3>
+      <h3><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f5a5.svg" alt="" aria-hidden="true" width="20"> Frontend</h3>
       <p>Next.js 16, React 19, TypeScript, dashboard-first interface design.</p>
     </td>
     <td width="33%">
-      <h3>Backend</h3>
+      <h3><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f5c4.svg" alt="" aria-hidden="true" width="20"> Backend</h3>
       <p>Supabase-backed private implementation with server-side boundaries.</p>
     </td>
     <td width="33%">
-      <h3>Security</h3>
+      <h3><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e1.svg" alt="" aria-hidden="true" width="20"> Security</h3>
       <p>Tenant-aware design, API-key integration boundary, RBAC, private disclosure path.</p>
     </td>
   </tr>
@@ -184,7 +184,7 @@ Authentication, limits, response headers, and response examples are documented i
   <img src="https://skillicons.dev/icons?i=nextjs,react,ts,supabase,postgres,nodejs" alt="MyVuln core technology icons" />
 </p>
 
-## Public repository boundary · Public repo sınırı
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e1.svg" alt="" aria-hidden="true" width="20"> Public repository boundary · Public repo sınırı
 
 | Published here | Private by design |
 | --- | --- |
@@ -199,13 +199,13 @@ The private MyVuln development repository remains private. Public issues and pul
 
 MyVuln private kaynak reposu private kalır. Public issue veya pull request içinde kaynak kod, schema detayı, exploit adımı, secret, tenant/müşteri verisi veya production kanıtı paylaşılmaz.
 
-## Security and disclosure · Güvenlik bildirimi
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6a8.svg" alt="" aria-hidden="true" width="20"> Security and disclosure · Güvenlik bildirimi
 
 Security reports must follow [SECURITY.md](SECURITY.md). Do not publish vulnerability details in public issues.
 
 Güvenlik bildirimleri [SECURITY.md](SECURITY.md) üzerinden ilerlemelidir. Zafiyet detayları public issue içinde paylaşılmamalıdır.
 
-## Repository map · Repo haritası
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4c1.svg" alt="" aria-hidden="true" width="20"> Repository map · Repo haritası
 
 ```text
 myvuln/
@@ -223,7 +223,7 @@ myvuln/
     validate-public-repo.mjs        Leak-prevention guard for this public repo
 ```
 
-## Validation · Yayın öncesi kontrol
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ea.svg" alt="" aria-hidden="true" width="20"> Validation · Yayın öncesi kontrol
 
 Run before every commit:
 
@@ -241,7 +241,7 @@ git diff --cached --check
 
 The validator blocks sensitive paths, environment files, private source directories, operational security records, binary-like files, and common secret patterns.
 
-## Public links · Bağlantılar
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f517.svg" alt="" aria-hidden="true" width="20"> Public links · Bağlantılar
 
 | Destination | Link |
 | --- | --- |
