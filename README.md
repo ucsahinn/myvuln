@@ -14,6 +14,23 @@
   <a href="README.fr.md"><img src="https://flagcdn.com/w20/fr.png" alt="Fran&#231;ais" width="20"></a>
 </p>
 
+<!-- bilingual-welcome:start -->
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><img src="https://flagcdn.com/w20/gb.png" alt="English" width="20"> English welcome</h3>
+      <p>MyVuln is the public-safe product hub for CVE intelligence, URL analysis, Intel Feed, API v1, alerting, reports, support, and security policy.</p>
+      <p><strong>Start here:</strong> [Public scope](docs/PUBLIC_SCOPE.md) defines what belongs here.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><img src="https://flagcdn.com/w20/tr.png" alt="Turkce" width="20"> T&#252;rk&#231;e kar&#351;&#305;lama</h3>
+      <p>MyVuln; CVE istihbarati, URL analizi, Intel Feed, API v1, uyarilar, raporlar, destek ve guvenlik politikasi icin public-safe urun vitrini.</p>
+      <p><strong>Buradan ba&#351;la:</strong> [README.tr.md](README.tr.md) Turkce urun vitrini ve sinirlarini anlatir.</p>
+    </td>
+  </tr>
+</table>
+<!-- bilingual-welcome:end -->
+
 [![Live product](https://img.shields.io/badge/live-myvuln.io-0f766e?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://myvuln.io/)
 [![Docs](https://img.shields.io/badge/docs-myvuln.io%2Fdocs-0891b2?style=for-the-badge&logo=readthedocs&logoColor=white)](https://myvuln.io/docs)
 [![README languages](https://img.shields.io/badge/README-6%20languages-0f766e?style=for-the-badge&logo=readthedocs&logoColor=white)](README.md)
