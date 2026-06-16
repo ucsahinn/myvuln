@@ -5,17 +5,18 @@
 ### CVE intelligence · URL analysis · Intel Feed · API v1 · Alerting · Reports
 
 <p>
-  🌐 <strong>Languages:</strong>
-  <a href="README.de.md"><img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width="20"></a> ·
-  <a href="README.es.md"><img src="https://flagcdn.com/w20/es.png" alt="Español" width="20"></a> ·
-  <a href="README.md"><img src="https://flagcdn.com/w20/gb.png" alt="English" width="20"></a> ·
-  <a href="README.pt-BR.md"><img src="https://flagcdn.com/w20/br.png" alt="Português (Brasil)" width="20"></a> ·
-  <a href="README.tr.md"><img src="https://flagcdn.com/w20/tr.png" alt="Türkçe" width="20"></a> ·
-  <a href="README.fr.md"><img src="https://flagcdn.com/w20/fr.png" alt="Français" width="20"></a>
+  &#127760; <strong>Languages:</strong>
+  <a href="README.de.md"><img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width="20"></a> |
+  <a href="README.es.md"><img src="https://flagcdn.com/w20/es.png" alt="Espa&#241;ol" width="20"></a> |
+  <a href="README.md"><img src="https://flagcdn.com/w20/gb.png" alt="English" width="20"></a> |
+  <a href="README.pt-BR.md"><img src="https://flagcdn.com/w20/br.png" alt="Portugu&#234;s (Brasil)" width="20"></a> |
+  <a href="README.tr.md"><img src="https://flagcdn.com/w20/tr.png" alt="T&#252;rk&#231;e" width="20"></a> |
+  <a href="README.fr.md"><img src="https://flagcdn.com/w20/fr.png" alt="Fran&#231;ais" width="20"></a>
 </p>
 
 [![Live product](https://img.shields.io/badge/live-myvuln.io-0f766e?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://myvuln.io/)
 [![Docs](https://img.shields.io/badge/docs-myvuln.io%2Fdocs-0891b2?style=for-the-badge&logo=readthedocs&logoColor=white)](https://myvuln.io/docs)
+[![README languages](https://img.shields.io/badge/README-6%20languages-0f766e?style=for-the-badge&logo=readthedocs&logoColor=white)](README.md)
 [![Public boundary](https://img.shields.io/badge/public%20repo-docs%20only-111827?style=for-the-badge&logo=github&logoColor=white)](#public-repository-boundary--public-repo-siniri)
 [![Private source](https://img.shields.io/badge/source-private-f59e0b?style=for-the-badge&logo=github&logoColor=111827)](#public-repository-boundary--public-repo-siniri)
 [![Security policy](https://img.shields.io/badge/security-policy-ef4444?style=for-the-badge&logo=securityscorecard&logoColor=white)](SECURITY.md)
